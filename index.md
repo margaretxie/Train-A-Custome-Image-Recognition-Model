@@ -1,37 +1,44 @@
-## Welcome to GitHub Pages
+### This is a walk through tutorial for using Caltech256 dataset and APPLE Create ML to train a image cognitition model. It is for myself for review what I learned and practiced. Also could be a tutorial for who is interested in it. 
 
-You can use the [editor on GitHub](https://github.com/margaretxie/Train-A-Custome-Image-Recognition-Model/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### The targeted model will be used to recognized five classes of plant. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Step 1. Prepare dataset for training
+ For people who already have their own dataset, or already know how to create their dataset, please skip this step.
+ For practicing purpose, I recommend using Caltech256, which is a object category dataset collection of 256 object categories, at least 80 images per category. 
+1)	Click here to access Caltech256, click the download link at the lower part of the page
+2)	After the download(1.2G) finishes, save it in your preferred folder location. 
+3)	Choose folders of categories we need as shown in the below diagram. Delete all others.  
+i.	 
+4)	We need two folders for each category. One for training, one for testing. Let’s make the existing folder as “plants – for training”, and copy it , named “plants – for testing”.
+5)	In the Training folder, for each sub-folder, keep the first 80 images, delete the others.
+6)	In the Testing folder, for each sub-folder, delete the first 80 images, delete the others. 
+So for now we have two dataset folders as below:
+ 
+### Step 2: Get MacBook and XCode ready
+     A MacBook with macOS Mojave version 10.14.4 or above is required, and XCode upgraded 
+     to version 10 or above. 
 
-### Markdown
+### Step 3: Create a new XCode playground 
+         In XCode, click File – New – Playground, choose macOS – Blank template. Save the new playground. 
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Step 4: Open the Classifier Builder 
+In the playgroup editor, type in below codes to import CreateMLUI, and make the classifier builder show up:
+ 
+After executing the above code by clicking the blue arrow button, the “ImageClassifier” builder should show up in the right as below diagram shows:
+ 
 
-```markdown
-Syntax highlighted code block
+### Step 5: Train the model
+        Simply drag and drop the training folder that with the 5 sub-folders, 400 images, into the ImageClassifier. It takes about two minutes to train. And then gives the training result. For example, as below shows:
+ 
+     If you want to adjust the model accuracy, could execute the last line of code  “builder.showInLiveView()” again to have a new instance of image classifier. Then click the display dropdown list symbol as below orange circle highlighted. Enter value “Max iterations” (e.g. 15, 18, 20). Drag and drop the train folder again.
+ 
 
-# Header 1
-## Header 2
-### Header 3
+### Step 6: Test the model
+Drag and drop the testing folder into the image classifier. It takes around one minute to test. 
+ 
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/margaretxie/Train-A-Custome-Image-Recognition-Model/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Step 7: Save the trained model
+When you are satisfied with the training result. Click the display dropdown list symbol  again, choose where you want to save the model, and then click the Save button to save it. 
+Then we have the trained model. It looks like this: 
+ 
+This model is ready to be used for any Apple application that supports Core ML. If you already have an app that uses Core ML to classify images, you could simply replace the trained ML with this new one you just trained. 
