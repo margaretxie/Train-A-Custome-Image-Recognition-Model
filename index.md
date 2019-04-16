@@ -20,7 +20,7 @@ So for now we have two dataset folders as below:
 
 ### Step 3: Create a new XCode playground 
          In XCode, click File – New – Playground, choose macOS – Blank template. Save the new playground.
-         ![Image Folders](P1.jpg)
+         ![Image Folders](P1.png)
 ### Step 4: Open the Classifier Builder 
 In the playgroup editor, type in below codes to import CreateMLUI, and make the classifier builder show up:
  
