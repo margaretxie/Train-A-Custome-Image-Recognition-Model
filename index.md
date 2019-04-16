@@ -7,15 +7,21 @@ The targeted model will be used to recognized five classes of plant.
  For people who already have their own dataset, or already know how to create their dataset, please skip this step.
  For practicing purpose, I recommend using Caltech256, which is a object category dataset collection of 256 object categories, at least 80 images per category. 
 1)	Click here to access Caltech256, click the download link at the lower part of the page
+
 2)	After the download(1.2G) finishes, save it in your preferred folder location. 
+
 3)	Choose folders of categories we need as shown in the below diagram. Delete all others.  
 ![Image Folders](images/P1.png)
 
 4)	We need two folders for each category. One for training, one for testing. Let’s make the existing folder as “plants – for training”, and copy it , named “plants – for testing”.
+
 5)	In the Training folder, for each sub-folder, keep the first 80 images, delete the others.
+
 6)	In the Testing folder, for each sub-folder, delete the first 80 images, delete the others. 
 So for now we have two dataset folders as below:
- 
+
+![Two Types of Image Folders](images/P2.png)
+
 ### Step 2: Get MacBook and XCode ready
      A MacBook with macOS Mojave version 10.14.4 or above is required, and XCode upgraded 
      to version 10 or above. 
