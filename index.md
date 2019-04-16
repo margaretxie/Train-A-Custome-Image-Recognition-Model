@@ -1,5 +1,5 @@
 ### This is a walk through tutorial for using Caltech256 dataset and APPLE Create ML to train a image cognitition model. 
-It is for myself for review what I learned and practiced. Also could be a tutorial for who is interested in it. 
+It is for myself for reviewing what I learned and practiced. Also could be a tutorial for who is interested in it. 
 
 The targeted model will be used to recognized five classes of plant. 
 
