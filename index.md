@@ -42,21 +42,21 @@ After executing the above code by clicking the blue arrow button, the “ImageCl
 
 ### Step 5: Train the model
         Simply drag and drop the training folder that with the 5 sub-folders, 400 images, into the ImageClassifier. It takes about two minutes to train. And then gives the training result. For example, as below shows:
-                                          ![P5](images/P5.png) 
+![P5](images/P5.png) 
      If you want to adjust the model accuracy, could execute the last line of code  “builder.showInLiveView()” again to have a new instance of image classifier. Then click the display dropdown list symbol as below orange circle highlighted. Enter value “Max iterations” (e.g. 15, 18, 20). Drag and drop the train folder again.
      
-                                           ![P6](images/P6.png)     
+![P6](images/P6.png)     
 
 ### Step 6: Test the model
 Drag and drop the testing folder into the image classifier. It takes around one minute to test. 
 
-                                           ![P7](images/P7.png) 
+![P7](images/P7.png) 
 
 ### Step 7: Save the trained model
 When you are satisfied with the training result. Click the display dropdown list symbol  again, choose where you want to save the model, and then click the Save button to save it. 
 Then we have the trained model. It looks like this: 
 
-                                           ![P8](images/P8.png) 
+![P8](images/P8.png) 
                                            
 This model is ready to be used for any Apple application that supports Core ML. If you already have an app that uses Core ML to classify images, you could simply replace the trained ML with this new one you just trained. 
 
