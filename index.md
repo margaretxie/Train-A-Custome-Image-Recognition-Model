@@ -42,6 +42,7 @@ After executing the above code by clicking the blue arrow button, the “ImageCl
 
 ### Step 5: Train the model
         Simply drag and drop the training folder that with the 5 sub-folders, 400 images, into the ImageClassifier. It takes about two minutes to train. And then gives the training result. For example, as below shows:
+        
 ![P5](images/P5.png) 
 
      If you want to adjust the model accuracy, could execute the last line of code  “builder.showInLiveView()” again to have a new instance of image classifier. Then click the display dropdown list symbol as below orange circle highlighted. Enter value “Max iterations” (e.g. 15, 18, 20). Drag and drop the train folder again.
