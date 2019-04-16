@@ -32,15 +32,6 @@ After executing the above code by clicking the blue arrow button, the “ImageCl
  
      If you want to adjust the model accuracy, could execute the last line of code  “builder.showInLiveView()” again to have a new instance of image classifier. Then click the display dropdown list symbol as below orange circle highlighted. Enter value “Max iterations” (e.g. 15, 18, 20). Drag and drop the train folder again.
      
-### Reference
-[1] PowerPoint Presentation - Introduction to Caltech-256. (2019). Retrieved from http://www.vision.caltech.edu/Image_Datasets/Caltech256/intro/
-
-[2] Creating an Image Classifier Model | Apple Developer Documentation. (2019). Retrieved from https://developer.apple.com/documentation/createml/creating_an_image_classifier_model
-
-[3] Nayak, S. (2019). Train a Deep Learning Image Classifier using CreateML | Learn OpenCV. Retrieved from https://www.learnopencv.com/how-to-train-a-deep-learning-based-image-classifier-in-macos/
-
-[4] Kambampati, S. (2019). Introduction to Create ML: How to Train Your Own Machine Learning Model in Xcode 10. Retrieved from https://www.appcoda.com/create-ml/
- 
 
 ### Step 6: Test the model
 Drag and drop the testing folder into the image classifier. It takes around one minute to test. 
@@ -51,3 +42,12 @@ When you are satisfied with the training result. Click the display dropdown list
 Then we have the trained model. It looks like this: 
  
 This model is ready to be used for any Apple application that supports Core ML. If you already have an app that uses Core ML to classify images, you could simply replace the trained ML with this new one you just trained. 
+
+### Reference
+[1] PowerPoint Presentation - Introduction to Caltech-256. (2019). Retrieved from http://www.vision.caltech.edu/Image_Datasets/Caltech256/intro/
+
+[2] Creating an Image Classifier Model | Apple Developer Documentation. (2019). Retrieved from https://developer.apple.com/documentation/createml/creating_an_image_classifier_model
+
+[3] Nayak, S. (2019). Train a Deep Learning Image Classifier using CreateML | Learn OpenCV. Retrieved from https://www.learnopencv.com/how-to-train-a-deep-learning-based-image-classifier-in-macos/
+
+[4] Kambampati, S. (2019). Introduction to Create ML: How to Train Your Own Machine Learning Model in Xcode 10. Retrieved from https://www.appcoda.com/create-ml/
