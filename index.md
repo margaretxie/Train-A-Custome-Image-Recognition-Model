@@ -7,7 +7,7 @@ The targeted model will be used to recognized five classes of plant.
  For people who already have their own dataset, or already know how to create their dataset, please skip this step.
  For practicing purpose, I recommend using Caltech256, which is a object category dataset collection of 256 object categories, at least 80 images per category. 
  
-1)	Click here to access Caltech256, click the download link at the lower part of the page
+1)	Click [here](http://www.vision.caltech.edu/Image_Datasets/Caltech256/) to access Caltech256, click the download link at the lower part of the page
 
 2)	After the download(1.2G) finishes, save it in your preferred folder location. 
 
