@@ -9,6 +9,7 @@ The targeted model will be used to recognized five classes of plant.
 1)	Click here to access Caltech256, click the download link at the lower part of the page
 2)	After the download(1.2G) finishes, save it in your preferred folder location. 
 3)	Choose folders of categories we need as shown in the below diagram. Delete all others.  
+![Image Folders](P1.png)
 4)	We need two folders for each category. One for training, one for testing. Let’s make the existing folder as “plants – for training”, and copy it , named “plants – for testing”.
 5)	In the Training folder, for each sub-folder, keep the first 80 images, delete the others.
 6)	In the Testing folder, for each sub-folder, delete the first 80 images, delete the others. 
@@ -20,7 +21,7 @@ So for now we have two dataset folders as below:
 
 ### Step 3: Create a new XCode playground 
          In XCode, click File – New – Playground, choose macOS – Blank template. Save the new playground.
-         ![Image Folders](P1.png)
+         
 ### Step 4: Open the Classifier Builder 
 In the playgroup editor, type in below codes to import CreateMLUI, and make the classifier builder show up:
  
